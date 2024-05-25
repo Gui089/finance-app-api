@@ -14,7 +14,6 @@ const execMigrations = async () => {
         const filePath = path.join(__dirname, '01-init.sql');
         const script = fs.readFileSync(filePath, 'utf8');
     
-    
         await client.query(script);
 
         console.log("migrations sucessfully");
