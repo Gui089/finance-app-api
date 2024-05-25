@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrations":"node src/db/postgres/migrations/exec.js"
+    "migrations": "node src/db/postgres/migrations/exec.js"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,10 @@
     "globals": "^15.2.0"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "pg": "^8.11.5"
+    "pg": "^8.11.5",
+    "uuid": "^9.0.1"
   }
 }
