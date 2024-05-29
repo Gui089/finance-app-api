@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrations": "node src/db/postgres/migrations/exec.js"
+    "migrations": "node src/db/postgres/migrations/exec.js",
+    "start:dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "pg": "^8.11.5",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "validator": "^13.12.0"
   }
 }
