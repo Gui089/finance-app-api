@@ -20,3 +20,8 @@ export const serverError = () => {
         }
     }
 }
+
+export const ok = (body) => ({
+    statusCode:200,
+    body,
+});
